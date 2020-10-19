@@ -1,0 +1,20 @@
+PODS:
+  - ACFloatingTextfield-Objc (1.9)
+  - CLTypingLabel (0.3.0)
+
+DEPENDENCIES:
+  - ACFloatingTextfield-Objc (~> 1.9)
+  - CLTypingLabel
+
+SPEC REPOS:
+  trunk:
+    - ACFloatingTextfield-Objc
+    - CLTypingLabel
+
+SPEC CHECKSUMS:
+  ACFloatingTextfield-Objc: 1c3d33e90af7dd274eff508f0082fad12f2eeb72
+  CLTypingLabel: e5f3adf9467a38664a505e6475c23946c3b3c424
+
+PODFILE CHECKSUM: f7a71c24a3161c56d230e1061b25e64af0a9dd2a
+
+COCOAPODS: 1.9.1
