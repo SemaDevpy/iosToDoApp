@@ -17,5 +17,6 @@ struct K{
     struct FStore {
         static let bodyField = "body"
         static let dateField = "date"
+        static let docId = "id"
     }
 }

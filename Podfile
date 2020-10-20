@@ -4,11 +4,11 @@ platform :ios, '9.0'
 target 'ToDoApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-pod 'CLTypingLabel'	
 pod 'ACFloatingTextfield-Objc', '~> 1.9'
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
-
+pod 'IQKeyboardManagerSwift'
+pod 'SwipeCellKit'
 
 
 end

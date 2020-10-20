@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A23DA1E3253B273A0083BEAD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23DA1E2253B273A0083BEAD /* RegisterViewController.swift */; };
 		A23DA1E5253B27880083BEAD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23DA1E4253B27880083BEAD /* LoginViewController.swift */; };
+		A28BB595253EF11F00620E5B /* Todos.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28BB594253EF11F00620E5B /* Todos.swift */; };
 		A29A3EBB253B1E4A008C2659 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29A3EBA253B1E4A008C2659 /* AppDelegate.swift */; };
 		A29A3EBD253B1E4A008C2659 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29A3EBC253B1E4A008C2659 /* SceneDelegate.swift */; };
 		A29A3EBF253B1E4A008C2659 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29A3EBE253B1E4A008C2659 /* WelcomeViewController.swift */; };
@@ -25,6 +26,7 @@
 		7F99E1D5F55DCD94E9D03DD4 /* Pods-ToDoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoApp.debug.xcconfig"; path = "Target Support Files/Pods-ToDoApp/Pods-ToDoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A23DA1E2253B273A0083BEAD /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A23DA1E4253B27880083BEAD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A28BB594253EF11F00620E5B /* Todos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todos.swift; sourceTree = "<group>"; };
 		A29A3EB7253B1E4A008C2659 /* ToDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A29A3EBA253B1E4A008C2659 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A29A3EBC253B1E4A008C2659 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		A29A3ED0253B1E79008C2659 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A28BB594253EF11F00620E5B /* Todos.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				A29A3EBD253B1E4A008C2659 /* SceneDelegate.swift in Sources */,
 				A29A3ED3253B1EA7008C2659 /* Constants.swift in Sources */,
 				A2FF0D42253D6A2E00849CB7 /* ToDoViewController.swift in Sources */,
+				A28BB595253EF11F00620E5B /* Todos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

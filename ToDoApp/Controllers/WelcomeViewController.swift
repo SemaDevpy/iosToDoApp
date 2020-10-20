@@ -26,7 +26,6 @@ class WelcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.text = "Have You Had Your to do Today?"
     }
 
 
