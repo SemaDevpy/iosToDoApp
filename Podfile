@@ -6,6 +6,8 @@ target 'ToDoApp' do
   use_frameworks!
 pod 'CLTypingLabel'	
 pod 'ACFloatingTextfield-Objc', '~> 1.9'
+pod 'Firebase/Auth'
+pod 'Firebase/Firestore'
 
 
 

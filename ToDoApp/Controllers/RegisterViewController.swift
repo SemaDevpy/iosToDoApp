@@ -8,8 +8,9 @@
 
 import UIKit
 import ACFloatingTextfield_Objc
+import Firebase
 
-class RegisterViewController: UIViewController , UITextFieldDelegate{
+class RegisterViewController: UIViewController{
 
     @IBOutlet weak var secondTextField: ACFloatingTextField!
     @IBOutlet weak var firstTextField: ACFloatingTextField!
@@ -26,14 +27,31 @@ class RegisterViewController: UIViewController , UITextFieldDelegate{
         button.layer.borderColor = UIColor.black.cgColor
     }
     
-
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        return true
-    }
-    
     @IBAction func registePressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "registerToDo", sender: self)
+        if let email = firstTextField.text, let password = secondTextField.text{
+            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+                if let e = error{
+                    self.alertUser(title: "", message: "\(e.localizedDescription)")
+                }else{
+                    self.performSegue(withIdentifier: K.registerSegue, sender: self)
+                }
+            }
+        }
+    }
+    
+    func alertUser(title : String, message : String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
     
 
+}
+//MARK: - UITextFieldDelegate
+extension RegisterViewController : UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+           return true
+       }
 }

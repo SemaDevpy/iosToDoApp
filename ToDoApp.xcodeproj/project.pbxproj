@@ -17,6 +17,7 @@
 		A29A3EC7253B1E50008C2659 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A29A3EC5253B1E50008C2659 /* LaunchScreen.storyboard */; };
 		A29A3ED3253B1EA7008C2659 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29A3ED2253B1EA7008C2659 /* Constants.swift */; };
 		A2FF0D42253D6A2E00849CB7 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FF0D41253D6A2E00849CB7 /* ToDoViewController.swift */; };
+		A2FF0D44253D6D4500849CB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2FF0D43253D6D4500849CB7 /* GoogleService-Info.plist */; };
 		DA178A524F8450AD73AC63D0 /* Pods_ToDoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A629135276A8E201E0A5D0B0 /* Pods_ToDoApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		A29A3EC8253B1E50008C2659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A29A3ED2253B1EA7008C2659 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A2FF0D41253D6A2E00849CB7 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
+		A2FF0D43253D6D4500849CB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A629135276A8E201E0A5D0B0 /* Pods_ToDoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB47E1B8E0CFAD9795690EE6 /* Pods-ToDoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoApp.release.xcconfig"; path = "Target Support Files/Pods-ToDoApp/Pods-ToDoApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +81,7 @@
 				A29A3EC3253B1E50008C2659 /* Assets.xcassets */,
 				A29A3EC5253B1E50008C2659 /* LaunchScreen.storyboard */,
 				A29A3EC8253B1E50008C2659 /* Info.plist */,
+				A2FF0D43253D6D4500849CB7 /* GoogleService-Info.plist */,
 				A29A3ED2253B1EA7008C2659 /* Constants.swift */,
 			);
 			path = ToDoApp;
@@ -188,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A29A3EC7253B1E50008C2659 /* LaunchScreen.storyboard in Resources */,
+				A2FF0D44253D6D4500849CB7 /* GoogleService-Info.plist in Resources */,
 				A29A3EC4253B1E50008C2659 /* Assets.xcassets in Resources */,
 				A29A3EC2253B1E4A008C2659 /* Main.storyboard in Resources */,
 			);
@@ -312,7 +316,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -371,7 +375,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

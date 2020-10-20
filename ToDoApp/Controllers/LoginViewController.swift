@@ -8,6 +8,7 @@
 
 import UIKit
 import ACFloatingTextfield_Objc
+import Firebase
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
 
@@ -31,18 +32,28 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
        }
     
     @IBAction func loginPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "loginToDo", sender: self)
+        if let email = firstTextField.text, let password = secondTextField.text{
+            Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+              guard let self = self else { return }
+                if let e = error{
+                    self.alertUser(title: "", message: "\(e.localizedDescription)")
+                }else{
+                    self.performSegue(withIdentifier: K.loginSegue, sender: self)
+                }
+              
+            }
+        }
+        
+        
+        
+       
     }
     
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    func alertUser(title : String, message : String){
+          let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+          alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+              alert.dismiss(animated: true, completion: nil)
+          }))
+          self.present(alert, animated: true, completion: nil)
+      }
 }

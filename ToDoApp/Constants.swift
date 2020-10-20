@@ -10,5 +10,12 @@ import Foundation
 
 
 struct K{
+    static let cellIdentifier = "cell"
+    static let registerSegue = "registerToDo"
+    static let loginSegue = "loginToDo"
     
+    struct FStore {
+        static let bodyField = "body"
+        static let dateField = "date"
+    }
 }
