@@ -69,8 +69,21 @@ class ToDoViewController: UIViewController {
     //adding data
     @IBAction func addPressed(_ sender: UIButton) {
         if let todoBody = textField.text, let user = Auth.auth().currentUser?.email{
+            //generate unique id
+            var uniqueID : Int{
+                var onlyIDS = [Int]()
+                if !todosArray.isEmpty{
+                    for id in todosArray{
+                        onlyIDS.append(Int(id.todoId)!)
+                    }
+                    return onlyIDS.max()! + 1
+                }else{
+                    return 0
+                }
+            }
             
-            db.collection("\(user)").document("\(todosArray.count)").setData([K.FStore.bodyField : todoBody, K.FStore.dateField : Date().timeIntervalSince1970, K.FStore.docId : "\(todosArray.count)"]){ (error) in
+            //addding with that id.
+            db.collection("\(user)").document("\(uniqueID)").setData([K.FStore.bodyField : todoBody, K.FStore.dateField : Date().timeIntervalSince1970, K.FStore.docId : "\(uniqueID)"]){ (error) in
                 if let e = error{
                     print("There was issue in saving data to firestore\(e)")
                 }else{

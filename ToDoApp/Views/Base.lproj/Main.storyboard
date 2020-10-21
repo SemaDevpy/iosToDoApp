@@ -89,7 +89,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1@2.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5xO-sU-5ym" customClass="ACFloatingTextField">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5xO-sU-5ym" customClass="ACFloatingTextField">
                                 <rect key="frame" x="30" y="118" width="354" height="40"/>
                                 <color key="backgroundColor" red="0.96509486440000003" green="0.9574407935" blue="0.90353304150000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -99,7 +99,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cTe-cc-1bA" customClass="ACFloatingTextField">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cTe-cc-1bA" customClass="ACFloatingTextField">
                                 <rect key="frame" x="30" y="178" width="354" height="40"/>
                                 <color key="backgroundColor" red="0.96509486440000003" green="0.9574407935" blue="0.90353304150000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -186,7 +186,7 @@
                                                             <constraint firstAttribute="height" constant="45" id="IJN-4y-Eah"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Nd-fJ-8Bg">
                                                         <rect key="frame" x="318" y="0.0" width="56" height="45"/>
@@ -342,7 +342,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="U5H-d4-bQU"/>
+        <segue reference="VFi-DR-Kgd"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="checklist" width="240" height="240"/>
